@@ -6,6 +6,42 @@ DOMAIN-SUFFIX,time.windows.com
 DOMAIN-SUFFIX,lanzov.com
 DOMAIN-SUFFIX,hao123.com
 
+#微信直连 (关键：放在最上方防止被漏网之鱼捕获)
+DOMAIN-KEYWORD,tencent
+DOMAIN-KEYWORD,wechat
+DOMAIN-SUFFIX,qq.com
+DOMAIN-SUFFIX,weixin.qq.com
+DOMAIN-SUFFIX,qpic.cn
+DOMAIN-SUFFIX,tenpay.com
+
+# 腾讯云 / 微信文件 CDN
+IP-CIDR,14.0.0.0/8
+IP-CIDR,43.128.0.0/10
+IP-CIDR,49.51.0.0/16
+IP-CIDR,101.32.0.0/16
+IP-CIDR,119.28.0.0/15
+
+# 王者荣耀（游戏直连）
+DOMAIN-SUFFIX,tencent.com
+DOMAIN-SUFFIX,qq.com
+DOMAIN-SUFFIX,qcloud.com
+DOMAIN-SUFFIX,myqcloud.com
+DOMAIN-SUFFIX,gtimg.cn
+DOMAIN-SUFFIX,ezgif.com
+DOMAIN-SUFFIX,pvp.qq.com
+
+# 腾讯游戏服务器 IP（必须直连）
+IP-CIDR,203.205.0.0/16,no-resolve
+IP-CIDR,203.195.0.0/16,no-resolve
+IP-CIDR,119.28.0.0/16,no-resolve
+IP-CIDR,101.226.0.0/16,no-resolve
+
+# 群晖
+DOMAIN-SUFFIX,synology.com
+
+#Speediance
+- DOMAIN-SUFFIX,pool.ntp.org
+
 # 域名关键字匹配
 DOMAIN-KEYWORD,baidu
 
